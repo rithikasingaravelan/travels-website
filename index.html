@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Signup form</title>
+    <link rel="StyleSheet" href="STYLE.css">
+    <style>
+        body{
+            background:linear-gradient(rgba(255, 255, 255, 0.79),rgba(255, 255, 255, 0.75)),url("36361.jpg");
+            background-size: cover;
+            margin-top: -18px;
+        }
+#bordre{
+    border: 3px solid rgb(67, 168, 109);
+    border-radius: 12px;
+    padding: 20px;
+    width:200px;
+    padding-left: 400px;
+    margin-left: 700px;
+  }
+  #inputs{
+      width:400px;
+      border-radius: 10px;
+      height:40px;
+      margin-left: -450px;
+      background-color: rgb(134, 227, 250);
+      font-size: 20px;
+      border:none;
+  }
+  #content{
+    margin-left: -350px;
+    text-align: left;
+    margin-top: 30px;
+  }
+  #submit{
+    border:none;
+    border-radius: 60px;
+    width:100px;
+    height:40px;
+    margin-left: -400px;
+    margin-top: 30px;
+    background-color: rgb(144, 122, 241);
+  }
+button:hover {
+  border: 2px solid black;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color:pink;
+  outline: none;
+}
+    </style>
+</head>
+<body>
+  <header style="height:100px;">
+    <div class="navbar">
+        <h2 style="font-size: 50px;"><img id="bar"src="Daco_4737573.png" style="margin-left: 750px;;"/>MK TRAVELS</h2>
+    </div>
+</header>
+    <div ID="Align">
+        <h1 style="margin-left:150px">SIGN UP FORM</h1>
+    </div>
+    <form action="signup.php" method="post">
+    <div id="bordre">
+        <h2 id="content">Firstname:</h2>
+        <input id="inputs" name="Firstname" placeholder="Firstname" type="text" id="Firstname">
+        <h2 id="content">Lastname:</h2>
+        <input id="inputs" name="Lastname" placeholder="Lastname" type="text" id="Lastname">
+        <h2 id="content">Email:</h2>
+        <input id="inputs" name="Email" placeholder="email" type="text" id="Email" >
+        <h2 id="content">Password:</h2>
+        <input id="inputs" name="Password" type="password" id="Password" >
+        <h2 id="content">Confirmpassword:</h2>
+        <input id="inputs" name="Confirmpassword" type="password" id="Confirm password" >
+        <h2 id="content">Phone:</h2>
+        <input id="inputs" name="Phone" placeholder="9008997685" type="text" id="Phone" ><br>
+        <button id="submit">Signup</button><br>
+        <p id="contents" style="margin-left: -400px;font-size: 20px;">If already have an account: <a href="login.html" style="text-decoration: none;">Login here</a></p>
+    </div>
+</form>
+</body>
+</html>
